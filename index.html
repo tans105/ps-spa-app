@@ -6,9 +6,10 @@
     <title>Company</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/components-font-awesome/css/fontawesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="app/app.css">
     <link rel="stylesheet" href="ext-modules/psFramework/psFramework.css">
+    <link rel="stylesheet" href="ext-modules/psMenu/psMenu.css">
 
     <!--External Libraries-->
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -16,10 +17,17 @@
 
     <!--Ext module scripts-->
     <script src="ext-modules/psMenu/psMenuModule.js"></script>
+    <script src="ext-modules/psMenu/psMenuController.js"></script>
+    <script src="ext-modules/psMenu/psMenuDirective.js"></script>
+
+    <script src="ext-modules/psMenu/psMenuItemDirective.js"></script>
+
     <script src="ext-modules/psDashboard/psDashboardModule.js"></script>
+
     <script src="ext-modules/psFramework/psFrameworkModule.js"></script>
     <script src="ext-modules/psFramework/psFrameworkController.js"></script>
     <script src="ext-modules/psFramework/psFrameworkDirective.js"></script>
+
 
     <!--Application scripts-->
     <script src="app/appModule.js"></script>
@@ -28,6 +36,12 @@
 
 </head>
 <body class="container-fluid">
-    <ps-framework title="Company" subtitle="Motto" icon-file="images/8297056.png"></ps-framework>
+    <ps-framework title="Company" subtitle="Motto" icon-file="images/8297056.png">
+        <ps-menu>
+            <ps-menu-item label="Dashboard" icon="icon-dashboard"></ps-menu-item>
+            <ps-menu-item label="Locations" icon="icon-location-arrow"></ps-menu-item>
+            <ps-menu-item label="Contact Us" icon="icon-user"></ps-menu-item>
+        </ps-menu>
+    </ps-framework>
 </body>
 </html>
