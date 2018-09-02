@@ -1,7 +1,13 @@
 'use strict';
 
 angular.module('psMenu').controller('psMenuController',
-    ['$scope', function ($scope) {
-
+    ['$scope', '$rootScope', function ($scope, $rootScope) {
+        this.setActiveElement = function (el) {
+            $scope.setActiveElement = el;
         }
+
+        this.setActiveRoute = function (route) {
+            $rootScope.$broadcast('ps-menu-item-selected-event', {route: route});
+        }
+    }
     ]);
