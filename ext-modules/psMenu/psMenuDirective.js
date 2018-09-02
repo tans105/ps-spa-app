@@ -1,15 +1,13 @@
 'use strict';
 
-angular.module('psMenu').directive('psMenu',function(){
-    return{
+angular.module('psMenu').directive('psMenu', function () {
+    return {
         transclude: true,
         templateUrl: 'ext-modules/psMenu/psMenuTemplate.html',
         controller: 'psMenuController',
-        link: function(scope,el, attr){
+        link: function (scope, el, attr) {
 
         },
-        scope: {
-
-        }
+        scope: {}
     }
 });
