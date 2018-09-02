@@ -1,0 +1,24 @@
+{
+  "name": "ps-spa-app",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "tans105"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.5.0",
+    "jquery": "3.2.1",
+    "bootstrap": "3.3.7",
+    "font-awesome": "latest",
+    "components-font-awesome": "^5.0.6"
+  },
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
