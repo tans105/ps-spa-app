@@ -31,6 +31,7 @@
 .ps-logo-subtitle {
     font-size: 13px;
     margin-top: -13px;
+    text-align: left;
 }
 
 .ps-right-side-controls {
@@ -45,7 +46,7 @@
     .ps-right-side-controls > div {
         text-align: right;
     }
- 
+
     .ps-logo-area{
         text-align: left;
     }
