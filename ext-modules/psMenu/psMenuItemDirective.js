@@ -5,6 +5,10 @@ angular.module('psMenu').directive('psMenuItem', function () {
         require: '^psMenu',
         templateUrl: 'ext-modules/psMenu/psMenuItemTemplate.html',
         link: function (scope, el, attr, ctrl) {
+            scope.isActive = function () {
+                return el === ctrl.getActiveElement();
+            }
+
             el.on('click', function (evt) {
                 evt.stopPropagation();
                 evt.preventDefault();
