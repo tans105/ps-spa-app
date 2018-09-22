@@ -13,5 +13,9 @@ angular.module('psMenu').controller('psMenuController',
         this.getActiveElement = function () {
             return $scope.activeElement;
         }
+
+        $scope.$on('ps-menu-show', function (evt, data) {
+            $scope.showMenu = data.show;
+        });
     }
     ]);
