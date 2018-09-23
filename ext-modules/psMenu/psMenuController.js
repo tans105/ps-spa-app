@@ -2,6 +2,9 @@
 
 angular.module('psMenu').controller('psMenuController',
     ['$scope', '$rootScope', function ($scope, $rootScope) {
+
+        $scope.showMenu = true;
+
         this.setActiveElement = function (el) {
             $scope.activeElement = el;
         };

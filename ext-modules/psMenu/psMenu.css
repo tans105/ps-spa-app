@@ -54,10 +54,20 @@
     margin-right: 10px;
 }
 
-.ps-menu-active-indicator{
+.ps-menu-active-indicator {
     float: right;
     color: #ddd;
     margin-right: 0;
     margin-top: 8px;
 }
 
+.ps-group-indicator-left {
+    float: right;
+    margin-top: 15px;
+    margin-right: 2px;
+    color: #ddd;
+}
+
+.ps-subitem-section {
+    padding-left: 16px;
+}
