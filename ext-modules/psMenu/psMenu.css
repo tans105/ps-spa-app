@@ -71,3 +71,23 @@
 .ps-subitem-section {
     padding-left: 16px;
 }
+
+.ps-menu-button-layout {
+    margin: 12px;
+    padding: 2px 8px;
+    color: #bbb;
+    background-color: #333;
+    border: 1px solid #999;
+}
+
+.ps-fade-in-animation {
+    -webkit-transition: linear all 0.5s;
+    -moz-transition: linear all 0.5s;
+    -ms-transition: linear all 0.5s;
+    -o-transition: linear all 0.5s;
+    transition: linear all 0.5s;
+}
+
+.ps-fade-in-animation.ng-hide {
+    opacity: 0;
+}

@@ -4,7 +4,9 @@ angular.module('psFramework').controller('psFrameworkController',
     ['$scope', '$window', '$timeout', '$rootScope',
         function ($scope, $window, $timeout, $rootScope) {
 
+            $scope.isMenuVisible = true;
             $scope.isMenuButtonVisible = true;
+            $scope.isMenuVertical = true;
 
             $($window).on('resize.psFramework', function () {
                 $scope.$apply(function () {
@@ -39,6 +41,11 @@ angular.module('psFramework').controller('psFrameworkController',
                     show: $scope.isMenuVisible
                 });
             }
+
+            $scope.$on('ps-menu-orientation-changed-event', function (evt, data) {
+                $scope.isMenuVertical = data.isMenuVertical;
+            })
+
         }
     ]);
 
